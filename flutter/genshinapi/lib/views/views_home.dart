@@ -20,7 +20,7 @@ class _HomepageState extends State<Homepage> {
                 gradient: LinearGradient(
               begin: Alignment.topLeft,
               end: Alignment.bottomRight,
-              colors: [Colors.deepPurple, Colors.purpleAccent],
+              colors: [MyColor().darkBlue, MyColor().darkPurple],
             )),
             child: Column(
               children: [
