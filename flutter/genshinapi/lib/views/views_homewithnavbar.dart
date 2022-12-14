@@ -51,6 +51,7 @@ class _ViewsHomewithnavbarState extends State<ViewsHomewithnavbar> {
         currentIndex: _selectedIndex,
         onTap: _onItemTapped,
       ),
+      
     );
   }
 }

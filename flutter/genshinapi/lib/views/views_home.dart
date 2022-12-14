@@ -59,6 +59,7 @@ class _HomepageState extends State<Homepage> {
                 ),
               ),
               Container(
+                width: double.infinity,
                 padding: EdgeInsets.fromLTRB(0, 16, 0, 0),
                 child: Column(
                   children: [
@@ -145,6 +146,7 @@ class _HomepageState extends State<Homepage> {
                 ),
               ),
               Container(
+                width: double.infinity,
                 padding: EdgeInsets.fromLTRB(0, 16, 0, 0),
                 child: Column(
                   children: [
@@ -218,6 +220,7 @@ class _HomepageState extends State<Homepage> {
                 ),
               ),
               Container(
+                width: double.infinity,
                 padding: EdgeInsets.fromLTRB(0, 16, 0, 0),
                 child: Column(
                   children: [

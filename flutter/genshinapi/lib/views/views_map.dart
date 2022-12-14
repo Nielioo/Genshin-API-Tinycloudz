@@ -11,7 +11,7 @@ class _ViewsMapState extends State<ViewsMap> {
   @override
   Widget build(BuildContext context) {
     return Container(
-      
+      child: Text("Genshin Impact Map"),
     );
   }
 }

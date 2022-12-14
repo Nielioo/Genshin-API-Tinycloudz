@@ -37,65 +37,66 @@ class _ViewsCharactersState extends State<ViewsCharacters> {
               ),
             ),
             Container(
-                padding: EdgeInsets.fromLTRB(0, 16, 0, 0),
-                child: Column(
-                  children: [
-                    Row(
-                      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                      children: [
-                        Container(
-                          width: 80,
-                          height: 100,
-                          color: Colors.white,
-                        ),
-                        Container(
-                          width: 80,
-                          height: 100,
-                          color: Colors.white,
-                        ),
-                        Container(
-                          width: 80,
-                          height: 100,
-                          color: Colors.white,
-                        ),
-                        Container(
-                          width: 80,
-                          height: 100,
-                          color: Colors.white,
-                        ),
-                      ],
-                    ),
-                    SizedBox(
-                      height: 16,
-                    ),
-                    Row(
-                      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                      children: [
-                        Container(
-                          width: 80,
-                          height: 100,
-                          color: Colors.white,
-                        ),
-                        Container(
-                          width: 80,
-                          height: 100,
-                          color: Colors.white,
-                        ),
-                        Container(
-                          width: 80,
-                          height: 100,
-                          color: Colors.white,
-                        ),
-                        Container(
-                          width: 80,
-                          height: 100,
-                          color: Colors.white,
-                        ),
-                      ],
-                    ),
-                  ],
-                ),
+              width: double.infinity,
+              padding: EdgeInsets.fromLTRB(0, 16, 0, 0),
+              child: Column(
+                children: [
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                    children: [
+                      Container(
+                        width: 80,
+                        height: 100,
+                        color: Colors.white,
+                      ),
+                      Container(
+                        width: 80,
+                        height: 100,
+                        color: Colors.white,
+                      ),
+                      Container(
+                        width: 80,
+                        height: 100,
+                        color: Colors.white,
+                      ),
+                      Container(
+                        width: 80,
+                        height: 100,
+                        color: Colors.white,
+                      ),
+                    ],
+                  ),
+                  SizedBox(
+                    height: 16,
+                  ),
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                    children: [
+                      Container(
+                        width: 80,
+                        height: 100,
+                        color: Colors.white,
+                      ),
+                      Container(
+                        width: 80,
+                        height: 100,
+                        color: Colors.white,
+                      ),
+                      Container(
+                        width: 80,
+                        height: 100,
+                        color: Colors.white,
+                      ),
+                      Container(
+                        width: 80,
+                        height: 100,
+                        color: Colors.white,
+                      ),
+                    ],
+                  ),
+                ],
               ),
+            ),
           ],
         ),
       ),

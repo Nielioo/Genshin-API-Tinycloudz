@@ -37,6 +37,7 @@ class _ViewsArtifactState extends State<ViewsArtifact> {
               ),
             ),
             Container(
+              width: double.infinity,
               padding: EdgeInsets.fromLTRB(0, 16, 0, 0),
               child: Column(
                 children: [
