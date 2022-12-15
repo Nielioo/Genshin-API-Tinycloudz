@@ -18,13 +18,13 @@
     <nav id="mainNav" class="navbar navbar-light navbar-expand-md sticky-top navbar-shrink py-3">
         <div class="container"><img class="img-fluid" src="assets/img/brands/Genshin_Impact_logo.svg" width="87"
                 height="31" style="padding-left: 0px;padding-right: 0px;margin-right: 12px;" /><a
-                class="navbar-brand d-flex align-items-center" href="/"><span>TinyCloudz</span></a><button
+                class="navbar-brand d-flex align-items-center" href="{{ route('home.index') }}"><span>TinyCloudz</span></a><button
                 class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navcol-1"><span
                     class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
             <div id="navcol-1" class="collapse navbar-collapse">
                 <ul class="navbar-nav " style="margin-right: 0px; margin-left: auto ">
-                    <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="/docs">Docs</a></li>
+                    <li class="nav-item"><a class="nav-link" href="{{ route('home.index') }}">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="{{ route('docs.index') }}">Docs</a></li>
                     <li><a class="btn btn-primary shadow" role="button" href="/login-custom">Sign in</a></li>
                 </ul>
             </div>
