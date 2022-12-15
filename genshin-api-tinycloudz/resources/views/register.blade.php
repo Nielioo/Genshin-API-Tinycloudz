@@ -55,7 +55,7 @@
                 {{-- Email Address --}}
                 <div class="mb-3">
                     <input class="form-control" type="email" name="email" placeholder="Email"
-                        value="{{ old('email') }}">
+                        value="{{ old('email') }}" required>
                     @foreach ($errors->get('email') as $error)
                         <p class="mt-2">{{ $error }}</p>
                     @endforeach
@@ -80,7 +80,8 @@
                 </div>
 
 
-                <div class="mb-3"><button class="btn btn-primary shadow d-block w-100" type="submit">Sign up</button>
+                <div class="mb-3">
+                    <button class="btn btn-primary shadow d-block w-100" type="submit">Sign up</button>
                 </div>
                 <p class="text-muted">Already have an account?&nbsp;<a href="/login-custom">Log in</a></p>
             </form>
