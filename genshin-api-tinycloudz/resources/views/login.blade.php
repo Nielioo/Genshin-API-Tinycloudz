@@ -6,10 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <title>Genshin Impact API by TinyCloudz</title>
     <meta name="description" content="Ready to use Genshin Impact API">
-    @vite('resources/css/app.css')
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css?family=Inter:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800&amp;display=swap">
+    href="https://fonts.googleapis.com/css?family=Inter:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800&amp;display=swap">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.4.8/swiper-bundle.min.css">
     <link rel="stylesheet" href="assets/css/Simple-Slider-Simple-Slider.css">
     <link rel="stylesheet" href="assets/css/theme.css">

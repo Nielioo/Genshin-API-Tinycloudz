@@ -41,4 +41,10 @@ class User extends Authenticatable
     protected $casts = [
         'email_verified_at' => 'datetime',
     ];
+
+    public function userApiKeys()
+	{
+		// Class, Foreign Key, Primary Key
+		return $this->hasMany(UserApiKey::class, 'user_id', 'id');
+	}
 }
