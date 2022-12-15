@@ -1,3 +1,5 @@
+dummy-assets/
+
 /vendor/
 node_modules/
 npm-debug.log
