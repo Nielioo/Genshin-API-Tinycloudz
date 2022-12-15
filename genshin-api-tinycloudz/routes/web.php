@@ -1,5 +1,7 @@
 <?php
 
+use App\Http\Controllers\HomeController;
+use App\Http\Controllers\DocsController;
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 
@@ -13,13 +15,8 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
-
-Route::get('/', function () {
-    return view('home');
-});
-Route::get('/docs', function () {
-    return view('docs');
-});
+Route::get('/', [HomeController::class, 'index'])->name('home.index');
+Route::get('/docs', [DocsController::class, 'index'])->name('docs.index');;
 Route::get('/login-custom', function () {
     return view('login');
 });
