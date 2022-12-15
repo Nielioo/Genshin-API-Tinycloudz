@@ -15,16 +15,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('home');
-});
-Route::get('/docs', function () {
-    return view('docs');
-});
-Route::get('/login-custom', function () {
-    return view('login');
-});
-Route::get('/register-custom', function () {
-    return view('register');
+    return view('welcome');
 });
 
 Route::get('/dashboard', function () {
