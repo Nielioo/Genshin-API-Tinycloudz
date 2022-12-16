@@ -62,12 +62,8 @@
     </header>
     <section class="py-5">
         <div class="container text-center py-5">
-            @auth
-                <p>Your API key is {{ $apiKey }}</p>
-            @endauth
             <p style="font-size: 1.6rem;margin-bottom: 0px;">view documentation <a href="{{ route('docs.index') }}"
-                    target="_blank" rel="noopener noreferrer">here</a></p><a href="#"> </a><a href="#">
-            </a><a href="#"> </a><a href="#"> </a><a href="#"> </a><a href="#"> </a>
+                    target="_blank" rel="noopener noreferrer">here</a></p>
         </div>
     </section>
     <section class="py-5">
