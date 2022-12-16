@@ -6,15 +6,13 @@ use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use App\Models\Post;
 use App\Http\Resources\PostResource;
+use Illuminate\Support\Facades\Http;
 
 class PostController extends Controller
 {
     public function index()
     {
-        //get posts
-        $posts = Post::latest()->paginate(5);
-
-        //return collection of posts as a resource
-        return new PostResource(true, 'List Data Posts', $posts);
+        $response = Http::GET('https://api.genshin.dev/weapons');
+        return new PostResource(true, 'List Weapon Data', json_decode($response->body()));
     }
 }
