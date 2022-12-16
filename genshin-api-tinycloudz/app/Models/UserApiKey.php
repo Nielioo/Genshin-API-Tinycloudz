@@ -29,6 +29,13 @@ class UserApiKey extends Model
 			->first();
 	}
 
+    public static function isApiKeyActive($apiKey)
+	{
+		return self::where('api_key', $apiKey)
+            ->where('is_active', true)
+			->exists();
+	}
+
     public function user()
 	{
 		// Class, Foreign Key, Primary Key
