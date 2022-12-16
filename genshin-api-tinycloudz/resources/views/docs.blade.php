@@ -19,9 +19,10 @@
     <nav id="mainNav" class="navbar navbar-light navbar-expand-md sticky-top navbar-shrink py-3">
         <div class="container"><img class="img-fluid" src="assets/img/brands/Genshin_Impact_logo.svg" width="87"
                 height="31" style="padding-left: 0px;padding-right: 0px;margin-right: 12px;" /><a
-                class="navbar-brand d-flex align-items-center" href="{{ route('home.index') }}"><span>TinyCloudz</span></a><button
-                class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navcol-1"><span
-                    class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+                class="navbar-brand d-flex align-items-center"
+                href="{{ route('home.index') }}"><span>TinyCloudz</span></a><button class="navbar-toggler"
+                data-bs-toggle="collapse" data-bs-target="#navcol-1"><span class="visually-hidden">Toggle
+                    navigation</span><span class="navbar-toggler-icon"></span></button>
             <div id="navcol-1" class="collapse navbar-collapse">
                 <ul class="navbar-nav " style="margin-right: 0px; margin-left: auto ">
                     <li class="nav-item"><a class="nav-link" href="{{ route('home.index') }}">Home</a></li>
@@ -51,9 +52,11 @@
                     <li class="nav-item"><a class="nav-link scrollto" href="#item-2-1">Section Item 2.1</a></li>
                     <li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#section-3"><span
                                 class="theme-icon-holder me-2"><i class="fas fa-box"></i></span>APIs</a></li>
-                    <li class="nav-item"><a class="nav-link scrollto" href="#item-3-1">Section Item 3.1 - Characters</a></li>
-                    <li class="nav-item"><a class="nav-link scrollto" href="#item-3-2">Section Item 3.2 - Weapons</a></li>
-                    <li class="nav-item"><a class="nav-link scrollto" href="#item-3-3">Section Item 3.3 - Artifacs</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-api-key">API Key</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-3-2">Section Item 3.2 - Weapons</a>
+                    </li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-3-3">Section Item 3.3 - Artifacs</a>
+                    </li>
                     <li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#section-6">
                             <span class="theme-icon-holder me-2"><i class="fas fa-laptop-code"></i></span>Web</a></li>
                     <li class="nav-item"><a class="nav-link scrollto" href="#item-6-1">Section Item 6.1</a></li>
@@ -97,7 +100,8 @@
                                 languages and 89 styles</a>.</p>
                         <p>This template uses <a class="theme-link" href="https://highlightjs.org/static/demo/"
                                 target="_blank">Atom One Dark</a> style for the code blocks:
-                            <br><code>&lt;link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.2/styles/atom-one-dark.min.css"&gt;</code>
+                            <br><code>&lt;link rel="stylesheet"
+                                href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.2/styles/atom-one-dark.min.css"&gt;</code>
                         </p>
                         <div class="docs-code-block">
                             <pre class="shadow-lg rounded"><code class="json hljs">[
@@ -155,7 +159,8 @@
                                 <h4 class="callout-title"><span class="callout-icon-holder"><i
                                             class="fas fa-exclamation-triangle"></i></span> Danger </h4>
                                 <p>Morbi eget interdum sapien. Donec sed turpis sed nulla lacinia accumsan vitae ut
-                                    tellus. Aenean vestibulum <a href="#">Link example</a> maximus ipsum vel dignissim.
+                                    tellus. Aenean vestibulum <a href="#">Link example</a> maximus ipsum vel
+                                    dignissim.
                                     Morbi ornare elit sit amet massa feugiat, viverra dictum ipsum pellentesque. </p>
                             </div>
                         </div>
@@ -209,13 +214,12 @@
                             <p>// Cara pakai API</p>
                         </section>
                     </header>
-                    <section class="docs-section" id="item-3-1">
-                        <h2 class="section-heading">Section Item 3.1 - API KEY</h2>
-                        <p>Vivamus efficitur fringilla ullamcorper. Cras condimentum condimentum mauris, vitae facilisis
-                            leo. Aliquam sagittis purus nisi, at commodo augue convallis id. Sed interdum turpis quis
-                            felis bibendum imperdiet. Mauris pellentesque urna eu leo gravida iaculis. In fringilla odio
-                            in felis ultricies porttitor. Donec at purus libero. Vestibulum libero orci, commodo nec
-                            arcu sit amet, commodo sollicitudin est. Vestibulum ultricies malesuada tempor.</p>
+                    <section class="docs-section" id="item-api-key">
+                        <h2 class="section-heading">API KEY</h2>
+                        <p>Here is your API Key</p>
+                        @auth
+                            <h4><kbd>{{ $apiKey }}</kbd></h4>
+                        @endauth
                     </section>
                     <section class="docs-section" id="item-3-2">
                         <h2 class="section-heading">Section Item 3.2</h2>
@@ -348,7 +352,8 @@
                     </header>
                     <section class="docs-section" id="item-9-1">
                         <h2 class="section-heading">Section Item 9.1 - Using API on Flutter&nbsp;</h2>
-                        <h5 class="pt-3"><i class="fas fa-question-circle me-1"></i>What's sit amet quam eget lacinia?
+                        <h5 class="pt-3"><i class="fas fa-question-circle me-1"></i>What's sit amet quam eget
+                            lacinia?
                         </h5>
                         <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
                             Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur
@@ -364,7 +369,8 @@
                         <h5 class="pt-3"><i class="fas fa-question-circle me-1"></i>Can I bibendum sodales?</h5>
                         <p>Fusce vulputate eleifend sapien. Vestibulum purus quam, scelerisque ut, mollis sed, nonummy
                             id, metus. Nullam accumsan lorem in dui. </p>
-                        <h5 class="pt-3"><i class="fas fa-question-circle me-1"></i>Where arcu sed urna gravida?</h5>
+                        <h5 class="pt-3"><i class="fas fa-question-circle me-1"></i>Where arcu sed urna gravida?
+                        </h5>
                         <p>Aenean et sodales nisi, vel efficitur sapien. Quisque molestie diam libero, et elementum diam
                             mollis ac. In dignissim aliquam est eget ullamcorper. Sed id sodales tortor, eu finibus leo.
                             Vivamus dapibus sollicitudin justo vel fermentum. Curabitur nec arcu sed urna gravida
@@ -372,7 +378,8 @@
                     </section>
                     <section class="docs-section" id="item-9-2">
                         <h2 class="section-heading">Section Item 9.2 forum discussion<small></small></h2>
-                        <h5 class="pt-3"><i class="fas fa-question-circle me-1"></i>What's sit amet quam eget lacinia?
+                        <h5 class="pt-3"><i class="fas fa-question-circle me-1"></i>What's sit amet quam eget
+                            lacinia?
                         </h5>
                         <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
                             Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur
@@ -388,7 +395,8 @@
                         <h5 class="pt-3"><i class="fas fa-question-circle me-1"></i>Can I bibendum sodales?</h5>
                         <p>Fusce vulputate eleifend sapien. Vestibulum purus quam, scelerisque ut, mollis sed, nonummy
                             id, metus. Nullam accumsan lorem in dui. </p>
-                        <h5 class="pt-3"><i class="fas fa-question-circle me-1"></i>Where arcu sed urna gravida?</h5>
+                        <h5 class="pt-3"><i class="fas fa-question-circle me-1"></i>Where arcu sed urna gravida?
+                        </h5>
                         <p>Aenean et sodales nisi, vel efficitur sapien. Quisque molestie diam libero, et elementum diam
                             mollis ac. In dignissim aliquam est eget ullamcorper. Sed id sodales tortor, eu finibus leo.
                             Vivamus dapibus sollicitudin justo vel fermentum. Curabitur nec arcu sed urna gravida
@@ -398,7 +406,8 @@
                 <footer class="footer">
                     <div class="container text-center py-5"><small class="copyright">Designed with <span
                                 class="sr-only">love</span><i class="fas fa-heart" style="color:#fb866a;"></i> by <a
-                                class="theme-link" href="https://tinycloudz.com" target="_blank">TinyCloudz Team</a> for
+                                class="theme-link" href="https://tinycloudz.com" target="_blank">TinyCloudz Team</a>
+                            for
                             developers</small>
                         <ul class="list-unstyled social-list pt-4 mb-0">
                             <li class="list-inline-item"><i class="fab fa-github fa-fw"></i></li>
