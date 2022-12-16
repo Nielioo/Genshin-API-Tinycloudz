@@ -142,7 +142,8 @@
                                 <h4 class="callout-title"><span class="callout-icon-holder me-1"><i
                                             class="fas fa-bullhorn"></i></span> Warning </h4>
                                 <p>Nunc hendrerit odio quis dignissim efficitur. Proin ut finibus libero. Morbi posuere
-                                    fringilla felis eget sagittis. Fusce sem orci, cursus in tortor <a href="#">link
+                                    fringilla felis eget sagittis. Fusce sem orci, cursus in tortor <a
+                                        href="#">link
                                         example</a> tellus vel diam viverra elementum.</p>
                             </div>
                         </div>
@@ -216,8 +217,11 @@
                     </header>
                     <section class="docs-section" id="item-api-key">
                         <h2 class="section-heading">API KEY</h2>
-                        <p>Here is your API Key</p>
+                        @guest
+                            <p>You need an account to get an API key.&nbsp;<a href="/login-custom">Log in</a>&nbsp;to see your API key</p>
+                        @endguest
                         @auth
+                            <p>Here is your API Key</p>
                             <h4><kbd>{{ $apiKey }}</kbd></h4>
                         @endauth
                     </section>

@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\Api\WeaponController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
@@ -14,7 +15,8 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::apiResource('/weapons', App\Http\Controllers\Api\PostController::class);
 Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
+
+Route::apiResource('/weapons', WeaponController::class);

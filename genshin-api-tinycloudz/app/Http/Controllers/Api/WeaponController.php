@@ -3,16 +3,18 @@
 namespace App\Http\Controllers\Api;
 
 use App\Http\Controllers\Controller;
+use App\Http\Requests\Api\ApiRequest;
 use Illuminate\Http\Request;
-use App\Models\Post;
-use App\Http\Resources\PostResource;
 use Illuminate\Support\Facades\Http;
 
-class PostController extends Controller
+class WeaponController extends Controller
 {
-    public function index()
+    public function index(ApiRequest $request)
     {
         $response = Http::GET('https://api.genshin.dev/weapons');
-        return new PostResource(true, 'List Weapon Data', json_decode($response->body()));
+
+        $data = json_decode($response->body());
+
+        return $data;
     }
 }
