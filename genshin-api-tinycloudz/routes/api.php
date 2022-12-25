@@ -20,3 +20,4 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 });
 
 Route::apiResource('/weapons', WeaponController::class);
+Route::apiResource('/characters', CharacterController::class);
