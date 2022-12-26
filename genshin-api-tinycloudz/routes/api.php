@@ -1,6 +1,9 @@
 <?php
 
 use App\Http\Controllers\Api\WeaponController;
+use App\Http\Controllers\Api\CharacterController;
+use App\Http\Controllers\Api\ArtifactsController;
+use App\Http\Controllers\Api\EnemyController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
@@ -20,3 +23,6 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 });
 
 Route::apiResource('/weapons', WeaponController::class);
+Route::apiResource('/characters', CharacterController::class);
+Route::apiResource('/artifacts', ArtifactsController::class);
+Route::apiResource('/enemies', EnemyController::class);
