@@ -53,8 +53,7 @@
                     <li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#section-3"><span
                                 class="theme-icon-holder me-2"><i class="fas fa-box"></i></span>APIs</a></li>
                     <li class="nav-item"><a class="nav-link scrollto" href="#item-api-key">API Key</a></li>
-                    <li class="nav-item"><a class="nav-link scrollto" href="#item-3-2">Section Item 3.2 - Weapons</a>
-                    </li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-characters">Characters</a></li>
                     <li class="nav-item"><a class="nav-link scrollto" href="#item-3-3">Section Item 3.3 - Artifacs</a>
                     </li>
                     <li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#section-6">
@@ -225,13 +224,17 @@
                             <h4><kbd>{{ $apiKey }}</kbd></h4>
                         @endauth
                     </section>
-                    <section class="docs-section" id="item-3-2">
-                        <h2 class="section-heading">Section Item 3.2</h2>
-                        <p>Vivamus efficitur fringilla ullamcorper. Cras condimentum condimentum mauris, vitae facilisis
-                            leo. Aliquam sagittis purus nisi, at commodo augue convallis id. Sed interdum turpis quis
-                            felis bibendum imperdiet. Mauris pellentesque urna eu leo gravida iaculis. In fringilla odio
-                            in felis ultricies porttitor. Donec at purus libero. Vestibulum libero orci, commodo nec
-                            arcu sit amet, commodo sollicitudin est. Vestibulum ultricies malesuada tempor.</p>
+                    <section class="docs-section" id="item-characters">
+                        <h2 class="section-heading">Characters</h2>
+                        <p>Access characters api on https://tinycloudz.com/genshin_api/api/characters?api_key={{$apiKey}}</p>
+                        <div class="docs-code-block">
+                            <script src="https://gist.github.com/Nielioo/66175143a16a19960eaff3d8987d694d.js"></script>
+                        </div>
+                        <h2 class="section-heading">Character Detail</h2>
+                        <p>Access characters api on https://tinycloudz.com/genshin_api/api/characters/{CHARACTER_NAME}?api_key={{$apiKey}}<br>You can choose CHARACTER_NAME from 'Characters' API</p>
+                        <div class="docs-code-block">
+                            <script src="https://gist.github.com/Nielioo/44ceae6b0739918c6ce0f916366a2547.js"></script>
+                        </div>
                     </section>
                     <section class="docs-section" id="item-3-3">
                         <h2 class="section-heading">Section Item 3.3</h2>
