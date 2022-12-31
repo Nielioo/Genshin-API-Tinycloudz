@@ -54,7 +54,8 @@
                                 class="theme-icon-holder me-2"><i class="fas fa-box"></i></span>APIs</a></li>
                     <li class="nav-item"><a class="nav-link scrollto" href="#item-api-key">API Key</a></li>
                     <li class="nav-item"><a class="nav-link scrollto" href="#item-characters">Characters</a></li>
-                    <li class="nav-item"><a class="nav-link scrollto" href="#item-3-3">Weapons</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-weapons">Weapons</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-artifacts">Artifacts</a></li>
                     {{-- hereee --}}
                     <li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#section-6">
                             <span class="theme-icon-holder me-2"><i class="fas fa-laptop-code"></i></span>Web</a></li>
@@ -241,6 +242,13 @@
                         <p>Access weapons api on https://tinycloudz.com/genshin_api/api/weapons?api_key={{$apiKey}}</p>
                         <div class="docs-code-block">
                             <script src="https://gist.github.com/Nielioo/1c03229775cbadcb8d38e2f6165f14fd.js"></script>
+                        </div>
+                    </section>
+                    <section class="docs-section" id="item-artifacts">
+                        <h2 class="section-heading">artifacts</h2>
+                        <p>Access artifacts api on https://tinycloudz.com/genshin_api/api/artifacts?api_key={{$apiKey}}</p>
+                        <div class="docs-code-block">
+                            <script src="https://gist.github.com/Nielioo/6a52101619e241eb3bad7ef17464490c.js"></script>
                         </div>
                     </section>
                 </article>
