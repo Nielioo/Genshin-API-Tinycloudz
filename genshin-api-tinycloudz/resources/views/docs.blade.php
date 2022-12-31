@@ -54,8 +54,8 @@
                                 class="theme-icon-holder me-2"><i class="fas fa-box"></i></span>APIs</a></li>
                     <li class="nav-item"><a class="nav-link scrollto" href="#item-api-key">API Key</a></li>
                     <li class="nav-item"><a class="nav-link scrollto" href="#item-characters">Characters</a></li>
-                    <li class="nav-item"><a class="nav-link scrollto" href="#item-3-3">Section Item 3.3 - Artifacs</a>
-                    </li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-3-3">Weapons</a></li>
+                    {{-- hereee --}}
                     <li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#section-6">
                             <span class="theme-icon-holder me-2"><i class="fas fa-laptop-code"></i></span>Web</a></li>
                     <li class="nav-item"><a class="nav-link scrollto" href="#item-6-1">Section Item 6.1</a></li>
@@ -236,15 +236,15 @@
                             <script src="https://gist.github.com/Nielioo/44ceae6b0739918c6ce0f916366a2547.js"></script>
                         </div>
                     </section>
-                    <section class="docs-section" id="item-3-3">
-                        <h2 class="section-heading">Section Item 3.3</h2>
-                        <p>Vivamus efficitur fringilla ullamcorper. Cras condimentum condimentum mauris, vitae facilisis
-                            leo. Aliquam sagittis purus nisi, at commodo augue convallis id. Sed interdum turpis quis
-                            felis bibendum imperdiet. Mauris pellentesque urna eu leo gravida iaculis. In fringilla odio
-                            in felis ultricies porttitor. Donec at purus libero. Vestibulum libero orci, commodo nec
-                            arcu sit amet, commodo sollicitudin est. Vestibulum ultricies malesuada tempor.</p>
+                    <section class="docs-section" id="item-weapons">
+                        <h2 class="section-heading">Weapons</h2>
+                        <p>Access weapons api on https://tinycloudz.com/genshin_api/api/weapons?api_key={{$apiKey}}</p>
+                        <div class="docs-code-block">
+                            <script src="https://gist.github.com/Nielioo/1c03229775cbadcb8d38e2f6165f14fd.js"></script>
+                        </div>
                     </section>
                 </article>
+                {{-- hereee --}}
                 <article class="docs-article" id="section-6">
                     <header class="docs-header">
                         <h1 class="docs-heading">Web</h1>
