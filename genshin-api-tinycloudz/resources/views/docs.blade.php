@@ -20,13 +20,16 @@
         <div class="container"><img class="img-fluid" src="assets/img/brands/Genshin_Impact_logo.svg" width="87"
                 height="31" style="padding-left: 0px;padding-right: 0px;margin-right: 12px;" /><a
                 class="navbar-brand d-flex align-items-center"
-                href="{{ route('home.index') }}"><span>TinyCloudz</span></a><button class="navbar-toggler"
-                data-bs-toggle="collapse" data-bs-target="#navcol-1"><span class="visually-hidden">Toggle
+                href="{{ route('home.index') }}"><span>TinyCloudz</span></a><button
+                class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navcol-1"><span
+                    class="visually-hidden">Toggle
                     navigation</span><span class="navbar-toggler-icon"></span></button>
             <div id="navcol-1" class="collapse navbar-collapse">
                 <ul class="navbar-nav " style="margin-right: 0px; margin-left: auto ">
-                    <li class="nav-item"><a class="nav-link" href="{{ route('home.index') }}">Home</a></li>
-                    <li class="nav-item"><a class="nav-link active" href="{{ route('docs.index') }}">Docs</a></li>
+                    <li class="nav-item"><a class="nav-link" href="{{ route('home.index') }}">Home</a>
+                    </li>
+                    <li class="nav-item"><a class="nav-link active"
+                            href="{{ route('docs.index') }}">Docs</a></li>
                     <li><a class="btn btn-primary shadow" role="button" href="/login-custom">Log in</a></li>
                 </ul>
             </div>
@@ -57,24 +60,13 @@
                     <li class="nav-item"><a class="nav-link scrollto" href="#item-weapons">Weapons</a></li>
                     <li class="nav-item"><a class="nav-link scrollto" href="#item-artifacts">Artifacts</a></li>
                     <li class="nav-item"><a class="nav-link scrollto" href="#item-enemies">Enemies</a></li>
-                    {{-- hereee --}}
-                    <li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#section-6">
-                            <span class="theme-icon-holder me-2"><i class="fas fa-laptop-code"></i></span>Web</a></li>
-                    <li class="nav-item"><a class="nav-link scrollto" href="#item-6-1">Section Item 6.1</a></li>
-                    <li class="nav-item"><a class="nav-link scrollto" href="#item-6-2">Section Item 6.2</a></li>
-                    <li class="nav-item"><a class="nav-link scrollto" href="#item-6-3">Section Item 6.3</a></li>
-                    <li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#section-7"><span
-                                class="theme-icon-holder me-2"><i class="fas fa-tablet-alt"></i></span>Mobile</a></li>
-                    <li class="nav-item"><a class="nav-link scrollto" href="#item-7-1">Section Item 7.1</a></li>
-                    <li class="nav-item"><a class="nav-link scrollto" href="#item-7-2">Section Item 7.2</a></li>
-                    <li class="nav-item"><a class="nav-link scrollto" href="#item-7-3">Section Item 7.3</a></li>
-                    <li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#section-8"><span
+                    <li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#section-4"><span
                                 class="theme-icon-holder me-2"><i class="fas fa-book-reader"></i></span>Resources</a>
                     </li>
                     <li class="nav-item"><a class="nav-link scrollto" href="#item-8-1">Section Item 8.1</a></li>
                     <li class="nav-item"><a class="nav-link scrollto" href="#item-8-2">Section Item 8.2</a></li>
                     <li class="nav-item"><a class="nav-link scrollto" href="#item-8-3">Section Item 8.3</a></li>
-                    <li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#section-9"><span
+                    <li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#section-5"><span
                                 class="theme-icon-holder me-2"><i class="fas fa-lightbulb"></i></span>FAQs</a></li>
                     <li class="nav-item"><a class="nav-link scrollto" href="#item-9-1">Section Item 9.1</a></li>
                     <li class="nav-item"><a class="nav-link scrollto" href="#item-9-2">Section Item 9.2</a></li>
@@ -143,8 +135,7 @@
                                 <h4 class="callout-title"><span class="callout-icon-holder me-1"><i
                                             class="fas fa-bullhorn"></i></span> Warning </h4>
                                 <p>Nunc hendrerit odio quis dignissim efficitur. Proin ut finibus libero. Morbi posuere
-                                    fringilla felis eget sagittis. Fusce sem orci, cursus in tortor <a
-                                        href="#">link
+                                    fringilla felis eget sagittis. Fusce sem orci, cursus in tortor <a href="#">link
                                         example</a> tellus vel diam viverra elementum.</p>
                             </div>
                         </div>
@@ -219,7 +210,9 @@
                     <section class="docs-section" id="item-api-key">
                         <h2 class="section-heading">API KEY</h2>
                         @guest
-                            <p>You need an account to get an API key.&nbsp;<a href="/login-custom">Log in</a>&nbsp;to see your API key</p>
+                            <p>You need an account to get an API key.&nbsp;<a href="/login-custom">Log in</a>&nbsp;to
+                                see
+                                your API key</p>
                         @endguest
                         @auth
                             <p>Here is your API Key</p>
@@ -228,117 +221,53 @@
                     </section>
                     <section class="docs-section" id="item-characters">
                         <h2 class="section-heading">Characters</h2>
-                        <p>Access characters api on https://tinycloudz.com/genshin_api/api/characters?api_key={{$apiKey}}</p>
+                        <p>Access characters api on
+                            https://tinycloudz.com/genshin_api/api/characters?api_key={{ $apiKey }}</p>
                         <div class="docs-code-block">
                             <script src="https://gist.github.com/Nielioo/66175143a16a19960eaff3d8987d694d.js"></script>
                         </div>
                         <h2 class="section-heading">Character Detail</h2>
-                        <p>Access characters api on https://tinycloudz.com/genshin_api/api/characters/{CHARACTER_NAME}?api_key={{$apiKey}}<br>You can choose CHARACTER_NAME from 'Characters' API</p>
+                        <p>Access characters api on
+                            https://tinycloudz.com/genshin_api/api/characters/{CHARACTER_NAME}?api_key={{ $apiKey }}<br>You
+                            can choose CHARACTER_NAME from 'Characters' API</p>
                         <div class="docs-code-block">
                             <script src="https://gist.github.com/Nielioo/44ceae6b0739918c6ce0f916366a2547.js"></script>
                         </div>
                     </section>
                     <section class="docs-section" id="item-weapons">
                         <h2 class="section-heading">Weapons</h2>
-                        <p>Access weapons api on https://tinycloudz.com/genshin_api/api/weapons?api_key={{$apiKey}}</p>
+                        <p>Access weapons api on
+                            https://tinycloudz.com/genshin_api/api/weapons?api_key={{ $apiKey }}</p>
                         <div class="docs-code-block">
                             <script src="https://gist.github.com/Nielioo/1c03229775cbadcb8d38e2f6165f14fd.js"></script>
                         </div>
                     </section>
                     <section class="docs-section" id="item-artifacts">
                         <h2 class="section-heading">Artifacts</h2>
-                        <p>Access artifacts api on https://tinycloudz.com/genshin_api/api/artifacts?api_key={{$apiKey}}</p>
+                        <p>Access artifacts api on
+                            https://tinycloudz.com/genshin_api/api/artifacts?api_key={{ $apiKey }}</p>
                         <div class="docs-code-block">
                             <script src="https://gist.github.com/Nielioo/6a52101619e241eb3bad7ef17464490c.js"></script>
                         </div>
                     </section>
                     <section class="docs-section" id="item-enemies">
                         <h2 class="section-heading">Enemies</h2>
-                        <p>Access enemies api on https://tinycloudz.com/genshin_api/api/enemies?api_key={{$apiKey}}</p>
+                        <p>Access enemies api on
+                            https://tinycloudz.com/genshin_api/api/enemies?api_key={{ $apiKey }}</p>
                         <div class="docs-code-block">
                             <script src="https://gist.github.com/Nielioo/636ffdc8fba2228d537135d8ea344a78.js"></script>
                         </div>
                         <h2 class="section-heading">Enemy Detail</h2>
-                        <p>Access enemies api on https://tinycloudz.com/genshin_api/api/enemies/{ENEMY_NAME}?api_key={{$apiKey}}<br>You can choose ENEMY_NAME from 'Enemies' API</p>
+                        <p>Access enemies api on
+                            https://tinycloudz.com/genshin_api/api/enemies/{ENEMY_NAME}?api_key={{ $apiKey }}<br>You
+                            can choose ENEMY_NAME from 'Enemies' API</p>
                         <div class="docs-code-block">
                             <script src="https://gist.github.com/Nielioo/6310864c1ea32af59c5e463bd6d37703.js"></script>
                         </div>
                     </section>
                 </article>
 
-            </article>
-                {{-- hereee --}}
-                <article class="docs-article" id="section-6">
-                    <header class="docs-header">
-                        <h1 class="docs-heading">Web</h1>
-                        <section class="docs-intro">
-                            <p>Section intro goes here. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
-                                finibus condimentum nisl id vulputate. Praesent aliquet varius eros interdum suscipit.
-                                Donec eu purus sed nibh convallis bibendum quis vitae turpis. Duis vestibulum diam
-                                lorem, vitae dapibus nibh facilisis a. Fusce in malesuada odio.</p>
-                        </section>
-                    </header>
-                    <section class="docs-section" id="item-6-1">
-                        <h2 class="section-heading">Section Item 6.1</h2>
-                        <p>Vivamus efficitur fringilla ullamcorper. Cras condimentum condimentum mauris, vitae facilisis
-                            leo. Aliquam sagittis purus nisi, at commodo augue convallis id. Sed interdum turpis quis
-                            felis bibendum imperdiet. Mauris pellentesque urna eu leo gravida iaculis. In fringilla odio
-                            in felis ultricies porttitor. Donec at purus libero. Vestibulum libero orci, commodo nec
-                            arcu sit amet, commodo sollicitudin est. Vestibulum ultricies malesuada tempor.</p>
-                    </section>
-                    <section class="docs-section" id="item-6-2">
-                        <h2 class="section-heading">Section Item 6.2</h2>
-                        <p>Vivamus efficitur fringilla ullamcorper. Cras condimentum condimentum mauris, vitae facilisis
-                            leo. Aliquam sagittis purus nisi, at commodo augue convallis id. Sed interdum turpis quis
-                            felis bibendum imperdiet. Mauris pellentesque urna eu leo gravida iaculis. In fringilla odio
-                            in felis ultricies porttitor. Donec at purus libero. Vestibulum libero orci, commodo nec
-                            arcu sit amet, commodo sollicitudin est. Vestibulum ultricies malesuada tempor.</p>
-                    </section>
-                    <section class="docs-section" id="item-6-3">
-                        <h2 class="section-heading">Section Item 6.3</h2>
-                        <p>Vivamus efficitur fringilla ullamcorper. Cras condimentum condimentum mauris, vitae facilisis
-                            leo. Aliquam sagittis purus nisi, at commodo augue convallis id. Sed interdum turpis quis
-                            felis bibendum imperdiet. Mauris pellentesque urna eu leo gravida iaculis. In fringilla odio
-                            in felis ultricies porttitor. Donec at purus libero. Vestibulum libero orci, commodo nec
-                            arcu sit amet, commodo sollicitudin est. Vestibulum ultricies malesuada tempor.</p>
-                    </section>
-                </article>
-                <article class="docs-article" id="section-7">
-                    <header class="docs-header">
-                        <h1 class="docs-heading">Mobile</h1>
-                        <section class="docs-intro">
-                            <p>Section intro goes here. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
-                                finibus condimentum nisl id vulputate. Praesent aliquet varius eros interdum suscipit.
-                                Donec eu purus sed nibh convallis bibendum quis vitae turpis. Duis vestibulum diam
-                                lorem, vitae dapibus nibh facilisis a. Fusce in malesuada odio.</p>
-                        </section>
-                    </header>
-                    <section class="docs-section" id="item-7-1">
-                        <h2 class="section-heading">Section Item 7.1</h2>
-                        <p>Vivamus efficitur fringilla ullamcorper. Cras condimentum condimentum mauris, vitae facilisis
-                            leo. Aliquam sagittis purus nisi, at commodo augue convallis id. Sed interdum turpis quis
-                            felis bibendum imperdiet. Mauris pellentesque urna eu leo gravida iaculis. In fringilla odio
-                            in felis ultricies porttitor. Donec at purus libero. Vestibulum libero orci, commodo nec
-                            arcu sit amet, commodo sollicitudin est. Vestibulum ultricies malesuada tempor.</p>
-                    </section>
-                    <section class="docs-section" id="item-7-2">
-                        <h2 class="section-heading">Section Item 7.2</h2>
-                        <p>Vivamus efficitur fringilla ullamcorper. Cras condimentum condimentum mauris, vitae facilisis
-                            leo. Aliquam sagittis purus nisi, at commodo augue convallis id. Sed interdum turpis quis
-                            felis bibendum imperdiet. Mauris pellentesque urna eu leo gravida iaculis. In fringilla odio
-                            in felis ultricies porttitor. Donec at purus libero. Vestibulum libero orci, commodo nec
-                            arcu sit amet, commodo sollicitudin est. Vestibulum ultricies malesuada tempor.</p>
-                    </section>
-                    <section class="docs-section" id="item-7-3">
-                        <h2 class="section-heading">Section Item 7.3</h2>
-                        <p>Vivamus efficitur fringilla ullamcorper. Cras condimentum condimentum mauris, vitae facilisis
-                            leo. Aliquam sagittis purus nisi, at commodo augue convallis id. Sed interdum turpis quis
-                            felis bibendum imperdiet. Mauris pellentesque urna eu leo gravida iaculis. In fringilla odio
-                            in felis ultricies porttitor. Donec at purus libero. Vestibulum libero orci, commodo nec
-                            arcu sit amet, commodo sollicitudin est. Vestibulum ultricies malesuada tempor.</p>
-                    </section>
-                </article>
-                <article class="docs-article" id="section-8">
+                <article class="docs-article" id="section-4">
                     <header class="docs-header">
                         <h1 class="docs-heading">Resources</h1>
                         <section class="docs-intro">
@@ -373,7 +302,7 @@
                             arcu sit amet, commodo sollicitudin est. Vestibulum ultricies malesuada tempor.</p>
                     </section>
                 </article>
-                <article class="docs-article" id="section-9">
+                <article class="docs-article" id="section-5">
                     <header class="docs-header">
                         <h1 class="docs-heading">FAQs</h1>
                         <section class="docs-intro">
