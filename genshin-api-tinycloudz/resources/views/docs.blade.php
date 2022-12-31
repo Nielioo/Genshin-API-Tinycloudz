@@ -56,6 +56,7 @@
                     <li class="nav-item"><a class="nav-link scrollto" href="#item-characters">Characters</a></li>
                     <li class="nav-item"><a class="nav-link scrollto" href="#item-weapons">Weapons</a></li>
                     <li class="nav-item"><a class="nav-link scrollto" href="#item-artifacts">Artifacts</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-enemies">Enemies</a></li>
                     {{-- hereee --}}
                     <li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#section-6">
                             <span class="theme-icon-holder me-2"><i class="fas fa-laptop-code"></i></span>Web</a></li>
@@ -245,13 +246,27 @@
                         </div>
                     </section>
                     <section class="docs-section" id="item-artifacts">
-                        <h2 class="section-heading">artifacts</h2>
+                        <h2 class="section-heading">Artifacts</h2>
                         <p>Access artifacts api on https://tinycloudz.com/genshin_api/api/artifacts?api_key={{$apiKey}}</p>
                         <div class="docs-code-block">
                             <script src="https://gist.github.com/Nielioo/6a52101619e241eb3bad7ef17464490c.js"></script>
                         </div>
                     </section>
+                    <section class="docs-section" id="item-enemies">
+                        <h2 class="section-heading">Enemies</h2>
+                        <p>Access enemies api on https://tinycloudz.com/genshin_api/api/enemies?api_key={{$apiKey}}</p>
+                        <div class="docs-code-block">
+                            <script src="https://gist.github.com/Nielioo/636ffdc8fba2228d537135d8ea344a78.js"></script>
+                        </div>
+                        <h2 class="section-heading">Enemy Detail</h2>
+                        <p>Access enemies api on https://tinycloudz.com/genshin_api/api/enemies/{ENEMY_NAME}?api_key={{$apiKey}}<br>You can choose ENEMY_NAME from 'Enemies' API</p>
+                        <div class="docs-code-block">
+                            <script src="https://gist.github.com/Nielioo/6310864c1ea32af59c5e463bd6d37703.js"></script>
+                        </div>
+                    </section>
                 </article>
+
+            </article>
                 {{-- hereee --}}
                 <article class="docs-article" id="section-6">
                     <header class="docs-header">
