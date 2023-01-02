@@ -29,7 +29,7 @@
                     </li>
                     <li class="nav-item"><a class="nav-link active" href="{{ route('docs.index') }}">Docs</a></li>
                     @guest
-                        <li><a class="btn btn-primary shadow" role="button" href="/login-custom">Log in</a></li>
+                        <li><a class="btn btn-primary shadow" role="button" href="{{ route('login') }}">Log in</a></li>
                     @endguest
                     @auth
                         <li class="nav-item dropdown">
@@ -231,7 +231,7 @@
                     <section class="docs-section" id="item-api-key">
                         <h2 class="section-heading">API KEY</h2>
                         @guest
-                            <p>You need an account to get an API key.&nbsp;<a href="/login-custom">Log in</a>&nbsp;to
+                            <p>You need an account to get an API key.&nbsp;<a href="{{ route('login') }}">Log in</a>&nbsp;to
                                 see
                                 your API key</p>
                         @endguest

@@ -27,7 +27,7 @@
                     <li class="nav-item"><a class="nav-link active" href="{{ route('home.index') }}">Home</a></li>
                     <li class="nav-item"><a class="nav-link" href="{{ route('docs.index') }}">Docs</a></li>
                     @guest
-                        <li><a class="btn btn-primary shadow" role="button" href="/login-custom">Log in</a></li>
+                        <li><a class="btn btn-primary shadow" role="button" href="{{ route('login') }}">Log in</a></li>
                     @endguest
                     @auth
                         <li class="nav-item dropdown">

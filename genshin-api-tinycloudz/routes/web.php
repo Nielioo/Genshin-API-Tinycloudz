@@ -16,13 +16,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 Route::get('/', [HomeController::class, 'index'])->name('home.index');
-Route::get('/docs', [DocsController::class, 'index'])->name('docs.index');;
-Route::get('/login-custom', function () {
-    return view('login');
-});
-Route::get('/register-custom', function () {
-    return view('register');
-});
+Route::get('/docs', [DocsController::class, 'index'])->name('docs.index');
 
 Route::get('/dashboard', function () {
     return view('dashboard');
