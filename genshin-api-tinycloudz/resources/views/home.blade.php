@@ -26,7 +26,29 @@
                 <ul class="navbar-nav " style="margin-right: 0px; margin-left: auto ">
                     <li class="nav-item"><a class="nav-link active" href="{{ route('home.index') }}">Home</a></li>
                     <li class="nav-item"><a class="nav-link" href="{{ route('docs.index') }}">Docs</a></li>
-                    <li><a class="btn btn-primary shadow" role="button" href="/login-custom">Log in</a></li>
+                    @guest
+                        <li><a class="btn btn-primary shadow" role="button" href="{{ route('login') }}">Log in</a></li>
+                    @endguest
+                    @auth
+                        <li class="nav-item dropdown">
+                            <button class="btn btn-primary shadow dropdown-toggle" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                {{ $username }}
+                            </button>
+                            <ul class="dropdown-menu dropdown-menu-end">
+                                <form method="POST" action="{{ route('logout') }}">
+                                    @csrf
+                                    <li>
+                                        <a class="dropdown-item" href="{{ route('logout') }}"
+                                            onclick="event.preventDefault();
+                                    this.closest('form').submit();">
+                                            Logout
+                                        </a>
+                                    </li>
+                                </form>
+                            </ul>
+                        </li>
+                    @endauth
                 </ul>
             </div>
         </div>
@@ -88,8 +110,8 @@
             <div class="text-muted d-flex justify-content-between align-items-center pt-3">
                 <p class="mb-0">Copyright © 2022 TinyCloudz</p>
                 <ul class="list-inline mb-0">
-                    <li class="list-inline-item"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em"
-                            fill="currentColor" viewBox="0 0 16 16" class="bi bi-facebook">
+                    <li class="list-inline-item"><svg xmlns="http://www.w3.org/2000/svg" width="1em"
+                            height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-facebook">
                             <path
                                 d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z">
                             </path>

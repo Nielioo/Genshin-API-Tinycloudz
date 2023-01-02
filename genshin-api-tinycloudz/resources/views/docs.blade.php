@@ -20,17 +20,37 @@
         <div class="container"><img class="img-fluid" src="assets/img/brands/Genshin_Impact_logo.svg" width="87"
                 height="31" style="padding-left: 0px;padding-right: 0px;margin-right: 12px;" /><a
                 class="navbar-brand d-flex align-items-center"
-                href="{{ route('home.index') }}"><span>TinyCloudz</span></a><button
-                class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navcol-1"><span
-                    class="visually-hidden">Toggle
+                href="{{ route('home.index') }}"><span>TinyCloudz</span></a><button class="navbar-toggler"
+                data-bs-toggle="collapse" data-bs-target="#navcol-1"><span class="visually-hidden">Toggle
                     navigation</span><span class="navbar-toggler-icon"></span></button>
             <div id="navcol-1" class="collapse navbar-collapse">
                 <ul class="navbar-nav " style="margin-right: 0px; margin-left: auto ">
                     <li class="nav-item"><a class="nav-link" href="{{ route('home.index') }}">Home</a>
                     </li>
-                    <li class="nav-item"><a class="nav-link active"
-                            href="{{ route('docs.index') }}">Docs</a></li>
-                    <li><a class="btn btn-primary shadow" role="button" href="/login-custom">Log in</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="{{ route('docs.index') }}">Docs</a></li>
+                    @guest
+                        <li><a class="btn btn-primary shadow" role="button" href="{{ route('login') }}">Log in</a></li>
+                    @endguest
+                    @auth
+                        <li class="nav-item dropdown">
+                            <button class="btn btn-primary shadow dropdown-toggle" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                {{ $username }}
+                            </button>
+                            <ul class="dropdown-menu dropdown-menu-end">
+                                <form method="POST" action="{{ route('logout') }}">
+                                    @csrf
+                                    <li>
+                                        <a class="dropdown-item" href="{{ route('logout') }}"
+                                            onclick="event.preventDefault();
+                                    this.closest('form').submit();">
+                                            Logout
+                                        </a>
+                                    </li>
+                                </form>
+                            </ul>
+                        </li>
+                    @endauth
                 </ul>
             </div>
         </div>
@@ -135,7 +155,8 @@
                                 <h4 class="callout-title"><span class="callout-icon-holder me-1"><i
                                             class="fas fa-bullhorn"></i></span> Warning </h4>
                                 <p>Nunc hendrerit odio quis dignissim efficitur. Proin ut finibus libero. Morbi posuere
-                                    fringilla felis eget sagittis. Fusce sem orci, cursus in tortor <a href="#">link
+                                    fringilla felis eget sagittis. Fusce sem orci, cursus in tortor <a
+                                        href="#">link
                                         example</a> tellus vel diam viverra elementum.</p>
                             </div>
                         </div>
@@ -210,7 +231,7 @@
                     <section class="docs-section" id="item-api-key">
                         <h2 class="section-heading">API KEY</h2>
                         @guest
-                            <p>You need an account to get an API key.&nbsp;<a href="/login-custom">Log in</a>&nbsp;to
+                            <p>You need an account to get an API key.&nbsp;<a href="{{ route('login') }}">Log in</a>&nbsp;to
                                 see
                                 your API key</p>
                         @endguest

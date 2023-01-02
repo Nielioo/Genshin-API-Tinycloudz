@@ -25,7 +25,7 @@
                 <ul class="navbar-nav " style="margin-right: 0px; margin-left: auto ">
                     <li class="nav-item"><a class="nav-link" href="{{ route('home.index') }}">Home</a></li>
                     <li class="nav-item"><a class="nav-link" href="{{ route('docs.index') }}">Docs</a></li>
-                    <li><a class="btn btn-primary shadow" role="button" href="/login-custom">Log in</a></li>
+                    <li><a class="btn btn-primary shadow" role="button" href="{{ route('login') }}">Log in</a></li>
                 </ul>
             </div>
         </div>
@@ -82,7 +82,7 @@
                 <div class="mb-3">
                     <button class="btn btn-primary shadow d-block w-100" type="submit">Sign up</button>
                 </div>
-                <p class="text-muted">Already have an account?&nbsp;<a href="/login-custom">Log in</a></p>
+                <p class="text-muted">Already have an account?&nbsp;<a href="{{ route('login') }}">Log in</a></p>
             </form>
         </div>
     </div>

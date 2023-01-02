@@ -9,14 +9,14 @@ use Illuminate\Support\Facades\Auth;
 class DocsController extends Controller
 {
     public function index() {
+        $apiKey = "{YOUR_API_KEY}";
 
-        // ! This is used for development only, remove this on release
-        // Return API key authenticated
         if (Auth::check()) {
+            $username = Auth::user()->name;
             $apiKey = UserApiKey::getApiKeyByUserId(Auth::id())->api_key;
-            return view('docs', compact('apiKey'));
+            return view('docs', compact('username', 'apiKey'));
         }
 
-        return view('docs');
+        return view('docs', compact('apiKey'));
     }
 }
