@@ -38,6 +38,7 @@
                             <ul class="dropdown-menu dropdown-menu-end">
                                 <form method="POST" action="{{ route('logout') }}">
                                     @csrf
+                                    <li><a class="dropdown-item" href="{{ route('profile.edit') }}">Profile</a></li>
                                     <li>
                                         <a class="dropdown-item" href="{{ route('logout') }}"
                                             onclick="event.preventDefault();
