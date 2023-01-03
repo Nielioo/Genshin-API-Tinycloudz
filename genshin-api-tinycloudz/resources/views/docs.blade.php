@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.4.8/swiper-bundle.min.css">
     <link rel="stylesheet" href="assets/css/Simple-Slider-Simple-Slider.css">
     <link rel="stylesheet" href="assets/css/theme.css">
+    <script src="https://tarptaeya.github.io/repo-card/repo-card.js"></script>
 </head>
 
 <body>
@@ -68,12 +69,12 @@
                     <li class="nav-item section-title"><a class="nav-link active scrollto" href="#section-1"><span
                                 class="theme-icon-holder me-2"><i class="fas fa-map-signs"></i></span>Introduction</a>
                     </li>
-                    <li class="nav-item"><a class="nav-link scrollto" href="#item-1-1">Section Item 1.1</a></li>
-                    <li class="nav-item"><a class="nav-link scrollto" href="#item-1-3">Section Item 1.3</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-getting-started">Getting Started</a>
+                    </li>
                     <li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#section-2"><span
                                 class="theme-icon-holder me-2"><i class="fas fa-arrow-down"></i></span>Installation</a>
                     </li>
-                    <li class="nav-item"><a class="nav-link scrollto" href="#item-2-1">Section Item 2.1</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-github">Github Repo</a></li>
                     <li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#section-3"><span
                                 class="theme-icon-holder me-2"><i class="fas fa-box"></i></span>APIs</a></li>
                     <li class="nav-item"><a class="nav-link scrollto" href="#item-api-key">API Key</a></li>
@@ -81,67 +82,27 @@
                     <li class="nav-item"><a class="nav-link scrollto" href="#item-weapons">Weapons</a></li>
                     <li class="nav-item"><a class="nav-link scrollto" href="#item-artifacts">Artifacts</a></li>
                     <li class="nav-item"><a class="nav-link scrollto" href="#item-enemies">Enemies</a></li>
-                    <li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#section-4"><span
-                                class="theme-icon-holder me-2"><i class="fas fa-book-reader"></i></span>Resources</a>
-                    </li>
-                    <li class="nav-item"><a class="nav-link scrollto" href="#item-8-1">Section Item 8.1</a></li>
-                    <li class="nav-item"><a class="nav-link scrollto" href="#item-8-2">Section Item 8.2</a></li>
-                    <li class="nav-item"><a class="nav-link scrollto" href="#item-8-3">Section Item 8.3</a></li>
                     <li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#section-5"><span
                                 class="theme-icon-holder me-2"><i class="fas fa-lightbulb"></i></span>FAQs</a></li>
-                    <li class="nav-item"><a class="nav-link scrollto" href="#item-9-1">Section Item 9.1</a></li>
-                    <li class="nav-item"><a class="nav-link scrollto" href="#item-9-2">Section Item 9.2</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-general">General</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-support">Support</a></li>
                 </ul>
             </nav>
         </div>
+
         <div class="docs-content">
             <div class="container">
                 <article class="docs-article" id="section-1">
                     <header class="docs-header">
-                        <h1 class="docs-heading">Introduction <span class="docs-time">Last updated: 2022-12-15</span>
+                        <h1 class="docs-heading">Introduction <span class="docs-time">Last updated: 2023-01-01</span>
                         </h1>
-                        <section class="docs-intro">
-                            <p>// Isi tujuan dan pengenalan tentang API ini</p>
-                        </section>
-                        <h5>Buat Github, klo perlu</h5>
-                        <div class="docs-code-block">
-                            <script src="https://gist.github.com/Nielioo/60f2dac2b1522253dfe87c03efa12649.js"></script>
-                        </div>
-                        <h5>Ini buat code json nanti:</h5>
-                        <p>You can <a class="theme-link" href="https://github.com/highlightjs/highlight.js"
-                                target="_blank">embed your code snippets using highlight.js</a> It supports <a
-                                class="theme-link" href="https://highlightjs.org/static/demo/" target="_blank">185
-                                languages and 89 styles</a>.</p>
-                        <p>This template uses <a class="theme-link" href="https://highlightjs.org/static/demo/"
-                                target="_blank">Atom One Dark</a> style for the code blocks:
-                            <br><code>&lt;link rel="stylesheet"
-                                href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.2/styles/atom-one-dark.min.css"&gt;</code>
-                        </p>
-                        <div class="docs-code-block">
-                            <pre class="shadow-lg rounded"><code class="json hljs">[
-  {
-    <span class="hljs-attr">"title"</span>: <span class="hljs-string">"apples"</span>,
-    <span class="hljs-attr">"count"</span>: [<span class="hljs-number">12000</span>, <span class="hljs-number">20000</span>],
-    <span class="hljs-attr">"description"</span>: {<span class="hljs-attr">"text"</span>: <span class="hljs-string">"..."</span>, <span class="hljs-attr">"sensitive"</span>: <span class="hljs-literal">false</span>}
-  },
-  {
-    <span class="hljs-attr">"title"</span>: <span class="hljs-string">"oranges"</span>,
-    <span class="hljs-attr">"count"</span>: [<span class="hljs-number">17500</span>, <span class="hljs-literal">null</span>],
-    <span class="hljs-attr">"description"</span>: {<span class="hljs-attr">"text"</span>: <span class="hljs-string">"..."</span>, <span class="hljs-attr">"sensitive"</span>: <span class="hljs-literal">false</span>}
-  }
-]
-
-
-</code></pre>
-                        </div>
                     </header>
-                    <section class="docs-section" id="item-1-1">
-                        <h2 class="section-heading">Section Item 1.1</h2>
+                    <section class="docs-section" id="item-getting-started">
+                        <h2 class="section-heading">Getting Started</h2>
                         <p>Vivamus efficitur fringilla ullamcorper. Cras condimentum condimentum mauris, vitae facilisis
                             leo. Aliquam sagittis purus nisi, at commodo augue convallis id. </p>
-                        <p>// Buat Code satu baris: <code>npm install &lt;package&gt;</code></p>
-                        <h5>Callout buat tips and tricks atau quote:</h5>
-                        <div class="callout-block callout-block-info">
+                        {{-- Callout Template --}}
+                        {{-- <div class="callout-block callout-block-info">
                             <div class="content">
                                 <h4 class="callout-title"><span class="callout-icon-holder me-1"><i
                                             class="fas fa-info-circle"></i></span> Note </h4>
@@ -178,17 +139,9 @@
                                     dignissim.
                                     Morbi ornare elit sit amet massa feugiat, viverra dictum ipsum pellentesque. </p>
                             </div>
-                        </div>
-                    </section>
-                    <section class="docs-section" id="item-1-3">
-                        <h2 class="section-heading">Section Item 1.3</h2>
-                        <p>Vivamus efficitur fringilla ullamcorper. Cras condimentum condimentum mauris, vitae facilisis
-                            leo. Aliquam sagittis purus nisi, at commodo augue convallis id. Sed interdum turpis quis
-                            felis bibendum imperdiet. Mauris pellentesque urna eu leo gravida iaculis. In fringilla odio
-                            in felis ultricies porttitor. Donec at purus libero. Vestibulum libero orci, commodo nec
-                            arcu sit amet, commodo sollicitudin est. Vestibulum ultricies malesuada tempor.</p>
-                        <h5>Button buat nanti:</h5>
-                        <div class="row my-3">
+                        </div> --}}
+                        {{-- Button Template --}}
+                        {{-- <div class="row my-3">
                             <div class="col-12 col-md-6">
                                 <ul class="list-unstyled list pl-0">
                                     <li><a class="btn btn-primary" role="button" href="#"><i
@@ -203,36 +156,27 @@
                                                 class="fas fa-exclamation-circle me-2"></i> Submit Issues</a></li>
                                 </ul>
                             </div>
-                        </div>
+                        </div> --}}
                     </section>
                 </article>
                 <article class="docs-article" id="section-2">
                     <header class="docs-header">
                         <h1 class="docs-heading">Installation</h1>
-                        <section class="docs-intro">
-                            <p>// Penjelasan cara instalasi</p>
-                        </section>
                     </header>
-                    <section class="docs-section" id="item-2-1">
-                        <h2 class="section-heading">Section Item 2.1</h2>
-                        <p>Vivamus efficitur fringilla ullamcorper. Cras condimentum condimentum mauris, vitae facilisis
-                            leo. Aliquam sagittis purus nisi, at commodo augue convallis id. Sed interdum turpis quis
-                            felis bibendum imperdiet. Mauris pellentesque urna eu leo gravida iaculis. In fringilla odio
-                            in felis ultricies porttitor. Donec at purus libero. Vestibulum libero orci, commodo nec
-                            arcu sit amet, commodo sollicitudin est. Vestibulum ultricies malesuada tempor.</p>
+                    <section class="docs-section" id="item-github">
+                        <h2 class="section-heading">Github Repo</h2>
+                        <div class="repo-card" data-repo="Nielioo/Genshin-API-Tinycloudz"></div>
                     </section>
                 </article>
                 <article class="docs-article" id="section-3">
                     <header class="docs-header">
                         <h1 class="docs-heading">APIs</h1>
-                        <section class="docs-intro">
-                            <p>// Cara pakai API</p>
-                        </section>
                     </header>
                     <section class="docs-section" id="item-api-key">
                         <h2 class="section-heading">API KEY</h2>
                         @guest
-                            <p>You need an account to get an API key.&nbsp;<a href="{{ route('login') }}">Log in</a>&nbsp;to
+                            <p>You need an account to get an API key.&nbsp;<a href="{{ route('login') }}">Log
+                                    in</a>&nbsp;to
                                 see
                                 your API key</p>
                         @endguest
@@ -244,14 +188,16 @@
                     <section class="docs-section" id="item-characters">
                         <h2 class="section-heading">Characters</h2>
                         <p>Access characters api on
-                            https://tinycloudz.com/genshin_api/api/characters?api_key={{ $apiKey }}</p>
+                            <kbd>https://tinycloudz.com/genshin_api/api/characters?api_key={{ $apiKey }}</kbd>
+                        </p>
                         <div class="docs-code-block">
                             <script src="https://gist.github.com/Nielioo/66175143a16a19960eaff3d8987d694d.js"></script>
                         </div>
                         <h2 class="section-heading">Character Detail</h2>
                         <p>Access characters api on
-                            https://tinycloudz.com/genshin_api/api/characters/{CHARACTER_NAME}?api_key={{ $apiKey }}<br>You
-                            can choose CHARACTER_NAME from 'Characters' API</p>
+                            <kbd>https://tinycloudz.com/genshin_api/api/characters/{CHARACTER_NAME}?api_key={{ $apiKey }}</kbd><br><br>You
+                            can choose one CHARACTER_NAME from 'Characters' API
+                        </p>
                         <div class="docs-code-block">
                             <script src="https://gist.github.com/Nielioo/44ceae6b0739918c6ce0f916366a2547.js"></script>
                         </div>
@@ -259,7 +205,8 @@
                     <section class="docs-section" id="item-weapons">
                         <h2 class="section-heading">Weapons</h2>
                         <p>Access weapons api on
-                            https://tinycloudz.com/genshin_api/api/weapons?api_key={{ $apiKey }}</p>
+                            <kbd>https://tinycloudz.com/genshin_api/api/weapons?api_key={{ $apiKey }}</kbd>
+                        </p>
                         <div class="docs-code-block">
                             <script src="https://gist.github.com/Nielioo/1c03229775cbadcb8d38e2f6165f14fd.js"></script>
                         </div>
@@ -267,7 +214,8 @@
                     <section class="docs-section" id="item-artifacts">
                         <h2 class="section-heading">Artifacts</h2>
                         <p>Access artifacts api on
-                            https://tinycloudz.com/genshin_api/api/artifacts?api_key={{ $apiKey }}</p>
+                            <kbd>https://tinycloudz.com/genshin_api/api/artifacts?api_key={{ $apiKey }}</kbd>
+                        </p>
                         <div class="docs-code-block">
                             <script src="https://gist.github.com/Nielioo/6a52101619e241eb3bad7ef17464490c.js"></script>
                         </div>
@@ -275,129 +223,62 @@
                     <section class="docs-section" id="item-enemies">
                         <h2 class="section-heading">Enemies</h2>
                         <p>Access enemies api on
-                            https://tinycloudz.com/genshin_api/api/enemies?api_key={{ $apiKey }}</p>
+                            <kbd>https://tinycloudz.com/genshin_api/api/enemies?api_key={{ $apiKey }}</kbd>
+                        </p>
                         <div class="docs-code-block">
                             <script src="https://gist.github.com/Nielioo/636ffdc8fba2228d537135d8ea344a78.js"></script>
                         </div>
                         <h2 class="section-heading">Enemy Detail</h2>
                         <p>Access enemies api on
-                            https://tinycloudz.com/genshin_api/api/enemies/{ENEMY_NAME}?api_key={{ $apiKey }}<br>You
-                            can choose ENEMY_NAME from 'Enemies' API</p>
+                            <kbd>https://tinycloudz.com/genshin_api/api/enemies/{ENEMY_NAME}?api_key={{ $apiKey }}</kbd><br><br>You
+                            can choose one ENEMY_NAME from 'Enemies' API
+                        </p>
                         <div class="docs-code-block">
                             <script src="https://gist.github.com/Nielioo/6310864c1ea32af59c5e463bd6d37703.js"></script>
                         </div>
                     </section>
-                </article>
-
-                <article class="docs-article" id="section-4">
-                    <header class="docs-header">
-                        <h1 class="docs-heading">Resources</h1>
-                        <section class="docs-intro">
-                            <p>Section intro goes here. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
-                                finibus condimentum nisl id vulputate. Praesent aliquet varius eros interdum suscipit.
-                                Donec eu purus sed nibh convallis bibendum quis vitae turpis. Duis vestibulum diam
-                                lorem, vitae dapibus nibh facilisis a. Fusce in malesuada odio.</p>
+                    <article class="docs-article" id="section-5">
+                        <header class="docs-header">
+                            <h1 class="docs-heading">FAQs</h1>
+                        </header>
+                        <section class="docs-section" id="item-general">
+                            <h2 class="section-heading">General</h2>
+                            <h5 class="pt-3"><i class="fas fa-question-circle me-1"></i>Are there any limits to the
+                                requests?
+                            </h5>
+                            <p>No. Feel free to use our APIs</p>
+                            <h5 class="pt-3"><i class="fas fa-question-circle me-1"></i>Is the REST API service
+                                free?</h5>
+                            <p>Yes!</p>
                         </section>
-                    </header>
-                    <section class="docs-section" id="item-8-1">
-                        <h2 class="section-heading">Section Item 8.1</h2>
-                        <p>Vivamus efficitur fringilla ullamcorper. Cras condimentum condimentum mauris, vitae facilisis
-                            leo. Aliquam sagittis purus nisi, at commodo augue convallis id. Sed interdum turpis quis
-                            felis bibendum imperdiet. Mauris pellentesque urna eu leo gravida iaculis. In fringilla odio
-                            in felis ultricies porttitor. Donec at purus libero. Vestibulum libero orci, commodo nec
-                            arcu sit amet, commodo sollicitudin est. Vestibulum ultricies malesuada tempor.</p>
-                    </section>
-                    <section class="docs-section" id="item-8-2">
-                        <h2 class="section-heading">Section Item 8.2</h2>
-                        <p>Vivamus efficitur fringilla ullamcorper. Cras condimentum condimentum mauris, vitae facilisis
-                            leo. Aliquam sagittis purus nisi, at commodo augue convallis id. Sed interdum turpis quis
-                            felis bibendum imperdiet. Mauris pellentesque urna eu leo gravida iaculis. In fringilla odio
-                            in felis ultricies porttitor. Donec at purus libero. Vestibulum libero orci, commodo nec
-                            arcu sit amet, commodo sollicitudin est. Vestibulum ultricies malesuada tempor.</p>
-                    </section>
-                    <section class="docs-section" id="item-8-3">
-                        <h2 class="section-heading">Section Item 8.3</h2>
-                        <p>Vivamus efficitur fringilla ullamcorper. Cras condimentum condimentum mauris, vitae facilisis
-                            leo. Aliquam sagittis purus nisi, at commodo augue convallis id. Sed interdum turpis quis
-                            felis bibendum imperdiet. Mauris pellentesque urna eu leo gravida iaculis. In fringilla odio
-                            in felis ultricies porttitor. Donec at purus libero. Vestibulum libero orci, commodo nec
-                            arcu sit amet, commodo sollicitudin est. Vestibulum ultricies malesuada tempor.</p>
-                    </section>
-                </article>
-                <article class="docs-article" id="section-5">
-                    <header class="docs-header">
-                        <h1 class="docs-heading">FAQs</h1>
-                        <section class="docs-intro">
-                            <p>// List untuk pertanyaan umum</p>
+                        <section class="docs-section" id="item-support">
+                            <h2 class="section-heading">Support</h2>
+                            <h5 class="pt-3"><i class="fas fa-question-circle me-1"></i>I have a problem using this!
+                            </h5>
+                            <p>Feel free to join our Discord Server or open an issue and we'll help you out!</p>
+                            <h5 class="pt-3"><i class="fas fa-question-circle me-1"></i>I found a bug!</h5>
+                            <p>Please open a new issue on our github repo with details of the problem and how it
+                                occured.</p>
+                            <h5 class="pt-3"><i class="fas fa-question-circle me-1"></i>The REST API isn't working!
+                            </h5>
+                            <p>Uh-oh. Open an issue on our github repo and we'll resolve it ASAP.</p>
                         </section>
-                    </header>
-                    <section class="docs-section" id="item-9-1">
-                        <h2 class="section-heading">Section Item 9.1 - Using API on Flutter&nbsp;</h2>
-                        <h5 class="pt-3"><i class="fas fa-question-circle me-1"></i>What's sit amet quam eget
-                            lacinia?
-                        </h5>
-                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
-                            Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur
-                            ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla
-                            consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget,
-                            arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu
-                            pede mollis pretium.</p>
-                        <h5 class="pt-3"><i class="fas fa-question-circle me-1"></i>How to ipsum dolor sit amet quam
-                            tortor?</h5>
-                        <p>Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus
-                            nunc, quis gravida magna mi a libero. Fusce vulputate eleifend sapien. Vestibulum purus
-                            quam, scelerisque ut, mollis sed, nonummy id, metus. Nullam accumsan lorem in dui. </p>
-                        <h5 class="pt-3"><i class="fas fa-question-circle me-1"></i>Can I bibendum sodales?</h5>
-                        <p>Fusce vulputate eleifend sapien. Vestibulum purus quam, scelerisque ut, mollis sed, nonummy
-                            id, metus. Nullam accumsan lorem in dui. </p>
-                        <h5 class="pt-3"><i class="fas fa-question-circle me-1"></i>Where arcu sed urna gravida?
-                        </h5>
-                        <p>Aenean et sodales nisi, vel efficitur sapien. Quisque molestie diam libero, et elementum diam
-                            mollis ac. In dignissim aliquam est eget ullamcorper. Sed id sodales tortor, eu finibus leo.
-                            Vivamus dapibus sollicitudin justo vel fermentum. Curabitur nec arcu sed urna gravida
-                            lobortis. Donec lectus est, imperdiet eu viverra viverra, ultricies nec urna. </p>
-                    </section>
-                    <section class="docs-section" id="item-9-2">
-                        <h2 class="section-heading">Section Item 9.2 forum discussion<small></small></h2>
-                        <h5 class="pt-3"><i class="fas fa-question-circle me-1"></i>What's sit amet quam eget
-                            lacinia?
-                        </h5>
-                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
-                            Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur
-                            ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla
-                            consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget,
-                            arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu
-                            pede mollis pretium.</p>
-                        <h5 class="pt-3"><i class="fas fa-question-circle me-1"></i>How to ipsum dolor sit amet quam
-                            tortor?</h5>
-                        <p>Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus
-                            nunc, quis gravida magna mi a libero. Fusce vulputate eleifend sapien. Vestibulum purus
-                            quam, scelerisque ut, mollis sed, nonummy id, metus. Nullam accumsan lorem in dui. </p>
-                        <h5 class="pt-3"><i class="fas fa-question-circle me-1"></i>Can I bibendum sodales?</h5>
-                        <p>Fusce vulputate eleifend sapien. Vestibulum purus quam, scelerisque ut, mollis sed, nonummy
-                            id, metus. Nullam accumsan lorem in dui. </p>
-                        <h5 class="pt-3"><i class="fas fa-question-circle me-1"></i>Where arcu sed urna gravida?
-                        </h5>
-                        <p>Aenean et sodales nisi, vel efficitur sapien. Quisque molestie diam libero, et elementum diam
-                            mollis ac. In dignissim aliquam est eget ullamcorper. Sed id sodales tortor, eu finibus leo.
-                            Vivamus dapibus sollicitudin justo vel fermentum. Curabitur nec arcu sed urna gravida
-                            lobortis. Donec lectus est, imperdiet eu viverra viverra, ultricies nec urna. </p>
-                    </section>
-                </article>
-                <footer class="footer">
-                    <div class="container text-center py-5"><small class="copyright">Designed with <span
-                                class="sr-only">love</span><i class="fas fa-heart" style="color:#fb866a;"></i> by <a
-                                class="theme-link" href="https://tinycloudz.com" target="_blank">TinyCloudz Team</a>
-                            for
-                            developers</small>
-                        <ul class="list-unstyled social-list pt-4 mb-0">
-                            <li class="list-inline-item"><i class="fab fa-github fa-fw"></i></li>
-                            <li class="list-inline-item"><i class="fab fa-twitter fa-fw"></i></li>
-                            <li class="list-inline-item"><i class="fab fa-facebook-f fa-fw"></i></li>
-                            <li class="list-inline-item"><i class="fab fa-instagram fa-fw"></i></li>
-                        </ul>
-                    </div>
-                </footer>
+                    </article>
+                    <footer class="footer">
+                        <div class="container text-center py-5"><small class="copyright">Designed with <span
+                                    class="sr-only">love</span><i class="fas fa-heart" style="color:#fb866a;"></i> by
+                                <a class="theme-link" href="https://tinycloudz.com" target="_blank">TinyCloudz
+                                    Team</a>
+                                for
+                                developers</small>
+                            <ul class="list-unstyled social-list pt-4 mb-0">
+                                <li class="list-inline-item"><i class="fab fa-github fa-fw"></i></li>
+                                <li class="list-inline-item"><i class="fab fa-twitter fa-fw"></i></li>
+                                <li class="list-inline-item"><i class="fab fa-facebook-f fa-fw"></i></li>
+                                <li class="list-inline-item"><i class="fab fa-instagram fa-fw"></i></li>
+                            </ul>
+                        </div>
+                    </footer>
             </div>
         </div>
     </div>
