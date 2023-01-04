@@ -189,14 +189,14 @@
                     <section class="docs-section" id="item-characters">
                         <h2 class="section-heading">Characters</h2>
                         <p>Access characters api on
-                            <kbd>https://genshinapi.tinycloudz.com/public/api/characters?api_key={{ $apiKey }}</kbd>
+                            <kbd>https://genshinapi.tinycloudz.com/api/characters?api_key={{ $apiKey }}</kbd>
                         </p>
                         <div class="docs-code-block">
                             <script src="https://gist.github.com/Nielioo/66175143a16a19960eaff3d8987d694d.js"></script>
                         </div>
                         <h2 class="section-heading">Character Detail</h2>
                         <p>Access characters api on
-                            <kbd>https://genshinapi.tinycloudz.com/public/api/characters/{CHARACTER_NAME}?api_key={{ $apiKey }}</kbd><br><br>You
+                            <kbd>https://genshinapi.tinycloudz.com/api/characters/{CHARACTER_NAME}?api_key={{ $apiKey }}</kbd><br><br>You
                             can choose one CHARACTER_NAME from 'Characters' API
                         </p>
                         <div class="docs-code-block">
@@ -206,7 +206,7 @@
                     <section class="docs-section" id="item-weapons">
                         <h2 class="section-heading">Weapons</h2>
                         <p>Access weapons api on
-                            <kbd>https://genshinapi.tinycloudz.com/public/api/weapons?api_key={{ $apiKey }}</kbd>
+                            <kbd>https://genshinapi.tinycloudz.com/api/weapons?api_key={{ $apiKey }}</kbd>
                         </p>
                         <div class="docs-code-block">
                             <script src="https://gist.github.com/Nielioo/1c03229775cbadcb8d38e2f6165f14fd.js"></script>
@@ -215,7 +215,7 @@
                     <section class="docs-section" id="item-artifacts">
                         <h2 class="section-heading">Artifacts</h2>
                         <p>Access artifacts api on
-                            <kbd>https://genshinapi.tinycloudz.com/public/api/artifacts?api_key={{ $apiKey }}</kbd>
+                            <kbd>https://genshinapi.tinycloudz.com/api/artifacts?api_key={{ $apiKey }}</kbd>
                         </p>
                         <div class="docs-code-block">
                             <script src="https://gist.github.com/Nielioo/6a52101619e241eb3bad7ef17464490c.js"></script>
@@ -224,14 +224,14 @@
                     <section class="docs-section" id="item-enemies">
                         <h2 class="section-heading">Enemies</h2>
                         <p>Access enemies api on
-                            <kbd>https://genshinapi.tinycloudz.com/public/api/enemies?api_key={{ $apiKey }}</kbd>
+                            <kbd>https://genshinapi.tinycloudz.com/api/enemies?api_key={{ $apiKey }}</kbd>
                         </p>
                         <div class="docs-code-block">
                             <script src="https://gist.github.com/Nielioo/636ffdc8fba2228d537135d8ea344a78.js"></script>
                         </div>
                         <h2 class="section-heading">Enemy Detail</h2>
                         <p>Access enemies api on
-                            <kbd>https://genshinapi.tinycloudz.com/public/api/enemies/{ENEMY_NAME}?api_key={{ $apiKey }}</kbd><br><br>You
+                            <kbd>https://genshinapi.tinycloudz.com/api/enemies/{ENEMY_NAME}?api_key={{ $apiKey }}</kbd><br><br>You
                             can choose one ENEMY_NAME from 'Enemies' API
                         </p>
                         <div class="docs-code-block">
