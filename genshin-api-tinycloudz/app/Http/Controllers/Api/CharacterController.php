@@ -32,4 +32,14 @@ class CharacterController extends Controller
 
         return $data;
     }
+
+    public function showGachaSplash(ApiRequest $request, $account_id)
+    {
+        $response = Http::GET('https://api.genshin.dev/characters/'.$account_id.'/gacha-splash');
+
+        $data = json_decode($response->body());
+
+        return $data;
+    }
+
 }

@@ -26,6 +26,7 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 
 Route::apiResource('/weapons', WeaponController::class);
 Route::apiResource('/characters', CharacterController::class);
+Route::get('/characters/{account_id}/gacha-splash', [CharacterController::class, 'showGachaSplash']);
 Route::apiResource('/artifacts', ArtifactsController::class);
 Route::apiResource('/elements', ElementController::class);
 Route::apiResource('/enemies', EnemyController::class);
