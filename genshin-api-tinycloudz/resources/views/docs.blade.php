@@ -82,6 +82,7 @@
                     <li class="nav-item"><a class="nav-link scrollto" href="#item-weapons">Weapons</a></li>
                     <li class="nav-item"><a class="nav-link scrollto" href="#item-artifacts">Artifacts</a></li>
                     <li class="nav-item"><a class="nav-link scrollto" href="#item-elements">Elements</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-nations">Nations</a></li>
                     <li class="nav-item"><a class="nav-link scrollto" href="#item-enemies">Enemies</a></li>
                     <li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#section-5"><span
                                 class="theme-icon-holder me-2"><i class="fas fa-lightbulb"></i></span>FAQs</a></li>
@@ -187,21 +188,21 @@
                             <h4><kbd>{{ $apiKey }}</kbd></h4>
                         @endauth
                     </section>
-                    <section class="docs-section" id="item-elements">
-                        <h2 class="section-heading">Elements</h2>
-                        <p>Access elements api on
-                            <kbd>https://genshinapi.tinycloudz.com/api/elements?api_key={{ $apiKey }}</kbd>
+                    <section class="docs-section" id="item-characters">
+                        <h2 class="section-heading">Characters</h2>
+                        <p>Access characters api on
+                            <kbd>https://genshinapi.tinycloudz.com/api/characters?api_key={{ $apiKey }}</kbd>
                         </p>
                         <div class="docs-code-block">
-                            <script src="https://gist.github.com/Nielioo/ba0bcfbb7bbb68775e522bde0036dbe4.js"></script>
+                            <script src="https://gist.github.com/Nielioo/66175143a16a19960eaff3d8987d694d.js"></script>
                         </div>
-                        <h2 class="section-heading">Element Detail</h2>
-                        <p>Access elements api on
-                            <kbd>https://genshinapi.tinycloudz.com/api/elements/{ELEMENT_NAME}?api_key={{ $apiKey }}</kbd><br><br>You
-                            can choose one ELEMENT_NAME from 'Elements' API
+                        <h2 class="section-heading">Character Detail</h2>
+                        <p>Access characters api on
+                            <kbd>https://genshinapi.tinycloudz.com/api/characters/{CHARACTER_NAME}?api_key={{ $apiKey }}</kbd><br><br>You
+                            can choose one CHARACTER_NAME from 'Characters' API
                         </p>
                         <div class="docs-code-block">
-                            <script src="https://gist.github.com/Nielioo/33d6d8c09e8378a0e90c37dd0355eee1.js"></script>
+                            <script src="https://gist.github.com/Nielioo/44ceae6b0739918c6ce0f916366a2547.js"></script>
                         </div>
                     </section>
                     <section class="docs-section" id="item-weapons">
@@ -222,21 +223,38 @@
                             <script src="https://gist.github.com/Nielioo/6a52101619e241eb3bad7ef17464490c.js"></script>
                         </div>
                     </section>
-                    <section class="docs-section" id="item-characters">
-                        <h2 class="section-heading">Characters</h2>
-                        <p>Access characters api on
-                            <kbd>https://genshinapi.tinycloudz.com/api/characters?api_key={{ $apiKey }}</kbd>
+                    <section class="docs-section" id="item-elements">
+                        <h2 class="section-heading">Elements</h2>
+                        <p>Access elements api on
+                            <kbd>https://genshinapi.tinycloudz.com/api/elements?api_key={{ $apiKey }}</kbd>
                         </p>
                         <div class="docs-code-block">
-                            <script src="https://gist.github.com/Nielioo/66175143a16a19960eaff3d8987d694d.js"></script>
+                            <script src="https://gist.github.com/Nielioo/ba0bcfbb7bbb68775e522bde0036dbe4.js"></script>
                         </div>
-                        <h2 class="section-heading">Character Detail</h2>
-                        <p>Access characters api on
-                            <kbd>https://genshinapi.tinycloudz.com/api/characters/{CHARACTER_NAME}?api_key={{ $apiKey }}</kbd><br><br>You
-                            can choose one CHARACTER_NAME from 'Characters' API
+                        <h2 class="section-heading">Element Detail</h2>
+                        <p>Access elements api on
+                            <kbd>https://genshinapi.tinycloudz.com/api/elements/{ELEMENT_NAME}?api_key={{ $apiKey }}</kbd><br><br>You
+                            can choose one ELEMENT_NAME from 'Elements' API
                         </p>
                         <div class="docs-code-block">
-                            <script src="https://gist.github.com/Nielioo/44ceae6b0739918c6ce0f916366a2547.js"></script>
+                            <script src="https://gist.github.com/Nielioo/33d6d8c09e8378a0e90c37dd0355eee1.js"></script>
+                        </div>
+                    </section>
+                    <section class="docs-section" id="item-nations">
+                        <h2 class="section-heading">Nations</h2>
+                        <p>Access nations api on
+                            <kbd>https://genshinapi.tinycloudz.com/api/nations?api_key={{ $apiKey }}</kbd>
+                        </p>
+                        <div class="docs-code-block">
+                            <script src="https://gist.github.com/Nielioo/18b989eb5d0de515e6026bc66fa65269.js"></script>
+                        </div>
+                        <h2 class="section-heading">Nation Detail</h2>
+                        <p>Access nations api on
+                            <kbd>https://genshinapi.tinycloudz.com/api/nations/{NATION_NAME}?api_key={{ $apiKey }}</kbd><br><br>You
+                            can choose one NATION_NAME from 'Nations' API
+                        </p>
+                        <div class="docs-code-block">
+                            <script src="https://gist.github.com/Nielioo/062988a6953e67fb444ff1ddad0cd3e6.js"></script>
                         </div>
                     </section>
                     <section class="docs-section" id="item-enemies">
