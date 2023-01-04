@@ -7,11 +7,11 @@ use App\Http\Requests\Api\ApiRequest;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Http;
 
-class CharacterController extends Controller
+class ElementController extends Controller
 {
     public function index(ApiRequest $request)
     {
-        $response = Http::GET('https://api.genshin.dev/characters');
+        $response = Http::GET('https://api.genshin.dev/elements');
 
         $data = json_decode($response->body());
 
@@ -26,20 +26,10 @@ class CharacterController extends Controller
 
     public function show(ApiRequest $request, $account_id)
     {
-        $response = Http::GET('https://api.genshin.dev/characters/'.$account_id);
+        $response = Http::GET('https://api.genshin.dev/elements/'.$account_id);
 
         $data = json_decode($response->body());
 
         return $data;
     }
-
-    public function showGachaSplash(ApiRequest $request, $account_id)
-    {
-        $response = Http::GET('https://api.genshin.dev/characters/'.$account_id.'/gacha-splash');
-
-        $data = json_decode($response->body());
-
-        return $data;
-    }
-
 }
